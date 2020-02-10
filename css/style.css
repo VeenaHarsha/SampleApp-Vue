@@ -1,0 +1,33 @@
+body {
+  font-family: tahoma;
+  color: #282828;
+  margin: 0px;
+  text-align: center;
+}
+
+.nav-bar {
+  background: rgb(150, 231, 123); 
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+#submit {
+  margin-top: 30px;
+  padding:10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1E95EA;
+  color: white;
+  height: 40px;
+  font-size: 14px;
+} 
+
+input {
+  width: 20%;  
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+#result {
+  padding: 5px;
+}

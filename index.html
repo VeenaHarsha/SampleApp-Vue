@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To Do</title>
+</head>
+<body>
+    <div class="nav-bar"> <h2>To Do App</h2> </div>
+    <div id='app1'>
+        <h2>{{ projectTitle }}</h2>
+        <input type='text' id='listName' v-model='listName' required placeholder="Add List ..." >
+        <button  id='submit' v-on:click='showData'>Submit</button>
+        <div id='result' v-for='(li,index) in listDetails'> {{ li.listName }} <button  v-on:click='removeData(index)'>X</button></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
